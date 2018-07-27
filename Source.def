@@ -1,8 +1,8 @@
 LIBRARY FirmataDll
 
 EXPORTS
-	EnumeratePorts
-	Open
+	enumeratePorts
+	open
 	reportAnalog
 	pinMode
 	digitalWrite

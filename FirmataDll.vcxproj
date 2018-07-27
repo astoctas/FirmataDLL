@@ -72,16 +72,16 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Test\firmatacpp\vendor\serial\include\serial\impl;C:\Test\firmatacpp\vendor\serial\include;C:\Test\firmatacpp;C:\Test\firmatacpp\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Test\firmatacpp\vendor\serial\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\firmatacpp\vendor\serial\include\serial\impl;..\firmatacpp\vendor\serial\include;..\firmatacpp;..\firmatacpp\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\firmatacpp\vendor\serial\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Test\firmatacpp\vendor\serial\include\serial\impl;C:\Test\firmatacpp\vendor\serial\include;C:\Test\firmatacpp;C:\Test\firmatacpp\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Test\firmatacpp\vendor\serial\Debug;$(LibraryPath);$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <IncludePath>..\firmatacpp\vendor\serial\include\serial\impl;..\firmatacpp\vendor\serial\include;..\firmatacpp;..\firmatacpp\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\firmatacpp\vendor\serial\Debug;$(LibraryPath);$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -94,6 +94,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;FIRMATADLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\Interfaz\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -128,6 +129,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;FIRMATADLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\Interfaz\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -178,8 +180,8 @@
     <ProjectReference Include="..\firmatacpp\vendor\serial\serial.vcxproj">
       <Project>{ee2c7e68-5904-3e0b-8469-4410a19eb6ca}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\firmatacpp\ZERO_CHECK.vcxproj">
-      <Project>{cd7dd49f-8a66-380d-a33e-91da0baa3f14}</Project>
+    <ProjectReference Include="..\Interfaz\Interfaz.vcxproj">
+      <Project>{c4a7ca02-1883-4fce-9402-bd109e7eaa4f}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
