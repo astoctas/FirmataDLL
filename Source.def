@@ -1,0 +1,11 @@
+LIBRARY FirmataDll
+
+EXPORTS
+	EnumeratePorts
+	Open
+	reportAnalog
+	pinMode
+	digitalWrite
+	analogWrite
+	digitalRead
+	analogRead
